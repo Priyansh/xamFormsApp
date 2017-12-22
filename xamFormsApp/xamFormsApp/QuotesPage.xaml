@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamFormsApp.QuotesPage"
+             Padding="20">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" 
+                    Android="20, 50, 20, 20" 
+                    WinPhone="20, 40, 20, 20" />
+    </ContentPage.Padding>
+    <StackLayout HorizontalOptions="Center"
+                 Spacing="15">
+        <Button x:Name="btnNext" Text="Next" Clicked="button_Clicked"/>
+        <Label x:Name="label"
+               BindingContext="{x:Reference slider}"
+               Text= "{Binding
+                      Path=Value,
+                      StringFormat='Font : {0:0}'}" />
+        <Slider x:Name="slider" Maximum="50" Minimum="16" />
+        <Label x:Name="lblQuotes"
+               BindingContext="{x:Reference slider}"
+               FontSize="{Binding Path=Value}"
+               Text="Action Reaction will be same" />
+    </StackLayout>
+</ContentPage>
