@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamFormsApp.LoginStack">
+    <StackLayout BackgroundColor="#127ac7"
+                 Padding="0, 100, 0, 0"
+                 Spacing="30">
+        <StackLayout VerticalOptions="Center"
+                     HorizontalOptions="Center">
+            <Label FontSize="Large" Text="Welcome to CryptocurrencyWorld" FontAttributes="Bold" TextColor="#FFFFFF"/>
+            <Label FontSize="Medium" Text="Crypto makes lives easier" TextColor="#FFFFFF" />
+        </StackLayout>
+        <Button Text="Login" BackgroundColor="#1dabf0" TextColor="#FFFFFF"/>
+        <Button Text="Register" BackgroundColor="#1dabf0" TextColor="#FFFFFF"/>
+    </StackLayout>
+</ContentPage>

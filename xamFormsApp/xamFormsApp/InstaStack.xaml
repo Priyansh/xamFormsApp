@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamFormsApp.InstaStack">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    Android="0, 50, 0, 0"
+                    iOS="0, 50, 0, 0" />
+    </ContentPage.Padding>
+    <StackLayout Spacing="5">
+        <Label Text="Insta_Photographer" />
+        <Image Source="http://lorempixel.com/1920/1080/nature/3/" />
+        <StackLayout Orientation="Horizontal"
+                     Spacing="15"
+                     Padding="0, 10, 0, 0">
+            <Label Text="Like" TextColor="#127ac7" />
+            <Label Text="Comment" TextColor="#127ac7" />
+            <Label Text="Share" TextColor="#127ac7" />
+        </StackLayout>
+        <BoxView Color="#f0f0f0" HeightRequest="1" />
+        <Label Text="700 Likes" FontAttributes="Bold" Font="25" />
+        <Label Text="This is the amazing time to go ahead and do something what matters to you #keepInspiring" />
+    </StackLayout>
+</ContentPage>
