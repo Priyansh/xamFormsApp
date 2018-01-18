@@ -13,7 +13,7 @@ namespace xamFormsApp
         {
             InitializeComponent();
 
-            MainPage = new QuotesPage();
+            MainPage = new InstaStack();
         }
 
         protected override void OnStart()
