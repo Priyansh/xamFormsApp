@@ -38,6 +38,12 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Core\PhonewordTranslator.cs" />
+    <Compile Include="GridExcercise.xaml.cs">
+      <DependentUpon>GridExcercise.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GridPage.xaml.cs">
+      <DependentUpon>GridPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="InstaStack.xaml.cs">
       <DependentUpon>InstaStack.xaml</DependentUpon>
     </Compile>
@@ -104,6 +110,16 @@
   <ItemGroup>
     <EmbeddedResource Include="InstaStack.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridExcercise.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

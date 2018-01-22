@@ -13,7 +13,7 @@ namespace xamFormsApp
         {
             InitializeComponent();
 
-            MainPage = new InstaStack();
+            MainPage = new GridExcercise();
         }
 
         protected override void OnStart()
