@@ -41,6 +41,9 @@
     <Compile Include="GridExcercise.xaml.cs">
       <DependentUpon>GridExcercise.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GridExcercise1.xaml.cs">
+      <DependentUpon>GridExcercise1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GridPage.xaml.cs">
       <DependentUpon>GridPage.xaml</DependentUpon>
     </Compile>
@@ -120,6 +123,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GridPage.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridExcercise1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
