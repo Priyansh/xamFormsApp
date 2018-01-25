@@ -13,7 +13,7 @@ namespace xamFormsApp
         {
             InitializeComponent();
 
-            MainPage = new GridExcercise1();
+            MainPage = new AbsolutePage();
         }
 
         protected override void OnStart()
