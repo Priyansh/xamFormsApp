@@ -1,14 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="xamFormsApp.AbsolutePageExcercise"
-             Padding="0, 10, 0, 0">
-    <StackLayout VerticalOptions="Center">
-        <Label Text="$11.95" HorizontalOptions="Center" TextColor="#33353a" FontSize="60" FontAttributes="Bold" />
-        <Button Text="Add $7.99 Credit" 
-                BackgroundColor="#1695A3" 
-                BorderRadius="15" 
-                FontSize="15" 
-                FontAttributes="Bold" />
-    </StackLayout>
+             x:Class="xamFormsApp.AbsolutePageExcercise">
+    <AbsoluteLayout>
+        <BoxView BackgroundColor="#F7F7F7"
+                 AbsoluteLayout.LayoutBounds="0,0,1,0.3"
+                 AbsoluteLayout.LayoutFlags="All" />
+        <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,0.3" 
+                     AbsoluteLayout.LayoutFlags="All"
+                     HorizontalOptions="Center">
+            <Label  Text="$11.95" TextColor="#33353a" FontSize="60" FontAttributes="Bold" />
+            <Button Text="Add $7.99 Credit"
+                    BackgroundColor="#1695A3" 
+                    BorderRadius="15" 
+                    FontSize="15"                
+                    FontAttributes="Bold" />
+        </StackLayout>
+        <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,0.7" 
+                     AbsoluteLayout.LayoutFlags="All"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     Padding="0,90,0,0"
+                     Spacing="10">
+            <Label HorizontalTextAlignment="Center" Text="Why Pay for Credit?" FontAttributes="Bold" FontSize="15" />
+            <Label FontSize="13">
+Because you can reach people who aren’t on
+   SkyApp by calling mobile and landline
+numbers, or spending SMS, at low-cost rates.
+            </Label>
+        </StackLayout>
+    </AbsoluteLayout>
 </ContentPage>
