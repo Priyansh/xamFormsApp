@@ -13,7 +13,7 @@ namespace xamFormsApp
         {
             InitializeComponent();
 
-            MainPage = new EmbeddedImageExcercise();
+            MainPage = new ImagePlatformSpecific();
         }
 
         protected override void OnStart()
