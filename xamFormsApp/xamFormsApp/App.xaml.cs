@@ -13,7 +13,7 @@ namespace xamFormsApp
         {
             InitializeComponent();
 
-            MainPage = new ImageCircleDemo();
+            MainPage = new ImagePhotoGallery();
         }
 
         protected override void OnStart()

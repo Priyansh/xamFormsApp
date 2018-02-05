@@ -4,7 +4,7 @@
              BackgroundColor="Black">
     <AbsoluteLayout>
         <ActivityIndicator IsRunning="{Binding Source={x:Reference imageSource},
-                                                Path=IsLoading}}"
+                                                Path=IsLoading}"
                            Color="White"
                            AbsoluteLayout.LayoutBounds="0.5, 0.5, 100, 100"
                            AbsoluteLayout.LayoutFlags="PositionProportional"/>

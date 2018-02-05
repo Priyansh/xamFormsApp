@@ -115,6 +115,12 @@
     <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon-Small%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\left.png" />
+    <BundleResource Include="Resources\left%402x.png" />
+    <BundleResource Include="Resources\left%403x.png" />
+    <BundleResource Include="Resources\right.png" />
+    <BundleResource Include="Resources\right%402x.png" />
+    <BundleResource Include="Resources\right%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
