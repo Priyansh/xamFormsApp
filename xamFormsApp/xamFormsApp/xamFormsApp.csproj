@@ -66,6 +66,9 @@
     <Compile Include="ListCustomPage.xaml.cs">
       <DependentUpon>ListCustomPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ListGroupPage.xaml.cs">
+      <DependentUpon>ListGroupPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LoginStack.xaml.cs">
       <DependentUpon>LoginStack.xaml</DependentUpon>
     </Compile>
@@ -76,6 +79,7 @@
       <DependentUpon>AbsolutePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MarkupExtension\EmbeddedImage.cs" />
+    <Compile Include="Models\ContactGroup.cs" />
     <Compile Include="Models\Contacts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuotesPage.xaml.cs">
@@ -207,6 +211,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ListCustomPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ListGroupPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
