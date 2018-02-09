@@ -13,7 +13,7 @@ namespace xamFormsApp
         {
             InitializeComponent();
 
-            MainPage = new ListGroupPage();
+            MainPage = new ListContextMenuPage();
         }
 
         protected override void OnStart()
