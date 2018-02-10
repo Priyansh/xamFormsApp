@@ -13,34 +13,29 @@ namespace xamFormsApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListContextMenuPage : ContentPage
     {
-        private ObservableCollection<Contacts> _contact;
+        //private ObservableCollection<Contacts> _contact;
+        private List<Contacts> _contact;
         public ListContextMenuPage()
         {
             InitializeComponent();
-            /*_contact = new ObservableCollection<Contacts>
-            {
-                new Contacts{Name = "Priyansh", Details= "Frendel Kitchens Ltd"},
-                new Contacts{Name = "Kupu Shah", Details= "Pharmacetical Ltd"}
-            };
-            lstViewElement.ItemsSource = _contact;*/
-            lstViewElement.ItemsSource = getContacts("");
+            lstViewElement.ItemsSource = GetContacts("");
         }
 
-        private ObservableCollection<Contacts> getContacts(string strVal)
+        //private ObservableCollection<Contacts> GetContacts(string searchText)
+        private List<Contacts> GetContacts(string searchText)
         {
-            _contact = new ObservableCollection<Contacts>
+            //_contact = new List<ObservableCollection>{}
+            _contact = new List<Contacts>
             {
                 new Contacts{Name = "Priyansh", Details= "Frendel Kitchens Ltd"},
                 new Contacts{Name = "Kupu Shah", Details= "Pharmacetical Ltd"}
             };
-            if (string.IsNullOrWhiteSpace(strVal))
+            if (string.IsNullOrWhiteSpace(searchText))
                 return _contact;
             else
-            {
-                _contact.Where(c => c.Name.StartsWith(strVal));
-                return _contact;
-            }
+                return _contact.Where(c => c.Name.StartsWith(searchText)).ToList();
         }
+
         private void Call_Clicked(object sender, EventArgs e)
         {
             var menuItem = sender as MenuItem;
@@ -48,6 +43,7 @@ namespace xamFormsApp
             DisplayAlert("Call Clicked", contacts.Name, "OK");
         }
 
+        /* Note : To Delete Selected contact, plz use ObservableCollection<Contacts> */
         private void Delete_Clicked(object sender, EventArgs e)
         {
             var contacts = (sender as MenuItem).CommandParameter as Contacts;
@@ -57,8 +53,7 @@ namespace xamFormsApp
 
         private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
         {
-            var lstContactFilter = getContacts(e.NewTextValue);
-            lstViewElement.ItemsSource = lstContactFilter;
+            lstViewElement.ItemsSource = GetContacts(e.NewTextValue);
         }
     }
 }
