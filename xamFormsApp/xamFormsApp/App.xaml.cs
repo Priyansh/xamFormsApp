@@ -13,7 +13,11 @@ namespace xamFormsApp
         {
             InitializeComponent();
 
-            MainPage = new ListContextMenuPage();
+            MainPage = new NavigationPage(new NavigationWelcome())
+            {
+                BarBackgroundColor = Color.LightGreen,
+                BarTextColor = Color.White
+            };
         }
 
         protected override void OnStart()

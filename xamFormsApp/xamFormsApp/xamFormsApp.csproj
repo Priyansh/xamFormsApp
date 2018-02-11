@@ -100,6 +100,12 @@
     <Compile Include="ImagePhotoGallery.xaml.cs">
       <DependentUpon>ImagePhotoGallery.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NavigationWelcome.xaml.cs">
+      <DependentUpon>NavigationWelcome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationIntroduction.xaml.cs">
+      <DependentUpon>NavigationIntroduction.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -118,6 +124,14 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="ImagePhotoGallery.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationWelcome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationIntroduction.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
