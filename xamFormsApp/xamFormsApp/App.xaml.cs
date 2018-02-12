@@ -13,7 +13,7 @@ namespace xamFormsApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new NavigationWelcome())
+            MainPage = new NavigationPage(new NavigationContactSimpleMaster())
             {
                 BarBackgroundColor = Color.LightGreen,
                 BarTextColor = Color.White

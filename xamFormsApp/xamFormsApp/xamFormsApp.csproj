@@ -106,6 +106,12 @@
     <Compile Include="NavigationIntroduction.xaml.cs">
       <DependentUpon>NavigationIntroduction.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NavigationContactMasterDetail.xaml.cs">
+      <DependentUpon>NavigationContactMasterDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationContactSimpleMaster.xaml.cs">
+      <DependentUpon>NavigationContactSimpleMaster.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -132,6 +138,14 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="NavigationIntroduction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationContactMasterDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavigationContactSimpleMaster.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
