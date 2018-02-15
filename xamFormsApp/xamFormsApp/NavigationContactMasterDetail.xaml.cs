@@ -9,10 +9,10 @@ namespace xamFormsApp
     {
         public NavigationContactMasterDetail(Contacts contacts)
         {
+            InitializeComponent();
             if (contacts is null)
                 throw new ArgumentNullException();
-            BindingContext = contacts;  
-            InitializeComponent();
+            BindingContext = contacts;
         }
     }
 }

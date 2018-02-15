@@ -22,6 +22,7 @@ namespace xamFormsApp
             if (lstContact.SelectedItem == null)
                 return;
             await Navigation.PushAsync(new NavigationContactMasterDetail(e.SelectedItem as Contacts));
+            //You can use use PushModelAsync for displaying model page
             lstContact.SelectedItem = null;
         }
     }

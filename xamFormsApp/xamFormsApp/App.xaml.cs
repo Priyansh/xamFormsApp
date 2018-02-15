@@ -18,7 +18,7 @@ namespace xamFormsApp
             //    BarBackgroundColor = Color.LightGreen,
             //    BarTextColor = Color.White
             //};
-            MainPage = new TabbedPageDynamic();
+            MainPage = new CarouselPageDynamic();
         }
 
         protected override void OnStart()
