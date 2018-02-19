@@ -5,14 +5,12 @@ using Xamarin.Forms;
 
 namespace xamFormsApp
 {
-    public partial class NavigationContactMasterDetail : ContentPage
+    public partial class NavigationContactMasterDetail : MasterDetailPage
     {
         public NavigationContactMasterDetail(Contacts contacts)
         {
             InitializeComponent();
-            if (contacts is null)
-                throw new ArgumentNullException();
-            BindingContext = contacts;
+
         }
     }
 }
