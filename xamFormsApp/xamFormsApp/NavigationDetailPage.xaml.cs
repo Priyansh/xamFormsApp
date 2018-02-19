@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace xamFormsApp
 {
-    public partial class NavigationSecondPage : ContentPage
+    public partial class NavigationDetailPage : ContentPage
     {
-        public NavigationSecondPage(Contacts contacts)
+        public NavigationDetailPage(Contacts contacts)
         {
             InitializeComponent();
             if (contacts is null)

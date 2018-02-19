@@ -118,8 +118,8 @@
     <Compile Include="TabbedPageDynamic.xaml.cs">
       <DependentUpon>TabbedPageDynamic.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NavigationSecondPage.xaml.cs">
-      <DependentUpon>NavigationSecondPage.xaml</DependentUpon>
+    <Compile Include="NavigationDetailPage.xaml.cs">
+      <DependentUpon>NavigationDetailPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -158,7 +158,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="NavigationSecondPage.xaml">
+    <EmbeddedResource Include="NavigationDetailPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

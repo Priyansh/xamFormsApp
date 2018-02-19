@@ -12,13 +12,13 @@ namespace xamFormsApp
         public App()
         {
             InitializeComponent();
-
-            //MainPage = new NavigationPage(new NavigationContactSimpleMaster())
-            //{
-            //    BarBackgroundColor = Color.LightGreen,
-            //    BarTextColor = Color.White
-            //};
-            MainPage = new CarouselPageDynamic();
+            MainPage = new NavigationContactMasterDetail();
+            /*MainPage = new NavigationPage(new NavigationContactSimpleMaster())
+            {
+                BarBackgroundColor = Color.LightGreen,
+                BarTextColor = Color.White
+            };*/
+            //MainPage = new CarouselPageDynamic();
         }
 
         protected override void OnStart()
