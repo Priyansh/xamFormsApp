@@ -121,6 +121,9 @@
     <Compile Include="NavigationDetailPage.xaml.cs">
       <DependentUpon>NavigationDetailPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NavInstaMasterDetailExcercise.xaml.cs">
+      <DependentUpon>NavInstaMasterDetailExcercise.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -159,6 +162,10 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="NavigationDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavInstaMasterDetailExcercise.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

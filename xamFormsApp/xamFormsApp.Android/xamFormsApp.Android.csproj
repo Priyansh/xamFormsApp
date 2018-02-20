@@ -158,6 +158,14 @@
     <AndroidResource Include="Resources\drawable-xhdpi\right" />
     <AndroidResource Include="Resources\drawable-xxhdpi\left" />
     <AndroidResource Include="Resources\drawable-xxhdpi\right" />
+    <AndroidResource Include="Resources\drawable\heart" />
+    <AndroidResource Include="Resources\drawable\user.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\heart" />
+    <AndroidResource Include="Resources\drawable-hdpi\user" />
+    <AndroidResource Include="Resources\drawable-xhdpi\heart.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\user" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\heart" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\user" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
