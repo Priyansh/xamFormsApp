@@ -5,11 +5,12 @@ using Xamarin.Forms;
 
 namespace xamFormsApp
 {
-    public partial class NavInstaMasterDetailExcercise : ContentPage
+    public partial class NavInstaMasterDetailExcercise : TabbedPage
     {
         public NavInstaMasterDetailExcercise()
         {
             InitializeComponent();
+            lstViewElement.ItemsSource = new ActivityService().GetActivities();
         }
     }
 }

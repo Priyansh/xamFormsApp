@@ -75,6 +75,9 @@
     <Compile Include="ListGroupPage.xaml.cs">
       <DependentUpon>ListGroupPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ListPageExcercise.xaml.cs">
+      <DependentUpon>ListPageExcercise.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LoginStack.xaml.cs">
       <DependentUpon>LoginStack.xaml</DependentUpon>
     </Compile>
@@ -85,12 +88,16 @@
       <DependentUpon>AbsolutePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MarkupExtension\EmbeddedImage.cs" />
+    <Compile Include="Models\Activity.cs" />
     <Compile Include="Models\ContactGroup.cs" />
     <Compile Include="Models\Contacts.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuotesPage.xaml.cs">
       <DependentUpon>QuotesPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Service\ActivityService.cs" />
+    <Compile Include="Service\UserService.cs" />
     <Compile Include="StackPage.xaml.cs">
       <DependentUpon>StackPage.xaml</DependentUpon>
     </Compile>
@@ -286,6 +293,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CarouselPageDynamic.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ListPageExcercise.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
