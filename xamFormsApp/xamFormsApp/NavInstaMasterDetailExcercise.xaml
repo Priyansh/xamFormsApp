@@ -2,10 +2,13 @@
 <TabbedPage xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
             xmlns="http://xamarin.com/schemas/2014/forms" 
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-            x:Class="xamFormsApp.NavInstaMasterDetailExcercise"
-            Padding="0, 20, 0, 0">
+            x:Class="xamFormsApp.NavInstaMasterDetailExcercise">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" 
+                    iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
     <ContentPage Title="Activity" Icon="heart.png">
-        <ListView x:Name="lstViewElement" SeparatorColor="Black" HasUnevenRows="True">
+        <ListView x:Name="lstActivityElement" SeparatorColor="Black" HasUnevenRows="True" ItemSelected="lstActivityElement_ItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -24,6 +27,22 @@
         </ListView>
     </ContentPage>
     <ContentPage Title="Profile" Icon="user.png">
-        <Label Text="testing2" />
+        <ListView x:Name="lstProfileElement" SeparatorColor="Black" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="5">
+                            <ic:CircleImage WidthRequest="60"
+                            HeightRequest="60"
+                            Source="{Binding ImageUrl}"
+                            Aspect="AspectFill" />
+                            <StackLayout HorizontalOptions="StartAndExpand">
+                                <Label Text="{Binding Description}" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage>
 </TabbedPage>

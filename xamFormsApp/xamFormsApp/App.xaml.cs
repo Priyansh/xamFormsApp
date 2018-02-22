@@ -12,7 +12,11 @@ namespace xamFormsApp
         public App()
         {
             InitializeComponent();
-            MainPage = new NavInstaMasterDetailExcercise();
+            MainPage = new NavigationPage(new NavInstaMasterDetailExcercise());
+            //{
+            //    BarBackgroundColor = Color.LightGreen,
+            //    BarTextColor = Color.White
+            //};
             /*MainPage = new NavigationPage(new NavigationContactSimpleMaster())
             {
                 BarBackgroundColor = Color.LightGreen,

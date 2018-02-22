@@ -8,7 +8,7 @@ namespace xamFormsApp
 {
     public class User
     {
-        private readonly string Url = "http://lorempixel.com/200/200/people/";
+        private readonly string Url = "http://lorempixel.com/100/100/people/";
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
