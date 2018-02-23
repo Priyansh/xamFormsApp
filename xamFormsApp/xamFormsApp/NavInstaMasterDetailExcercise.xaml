@@ -28,15 +28,18 @@
     </ContentPage>
     <ContentPage Title="AirBnb" Icon="user.png">
         <StackLayout>
-            <SearchBar Placeholder="Search..." TextChanged="SearchBar_TextChanged" />
+            <SearchBar x:Name="searchBarElement" Placeholder="Search..." TextChanged="SearchBar_TextChanged" />
             <ListView x:Name="lstAirbnbElement" 
                       IsGroupingEnabled="True" 
-                      GroupDisplayBinding="{Binding Title}">
+                      GroupDisplayBinding="{Binding Title}"
+                      IsPullToRefreshEnabled="True"
+                      Refreshing="lstAirbnbElement_Refreshing" 
+                      ItemSelected="lstAirbnbElement_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Location}" Detail="{Binding CheckIn}">
+                        <TextCell Text="{Binding Location}" Detail="{Binding formattedDate}">
                             <TextCell.ContextActions>
-                                <MenuItem IsDestructive="True" Text="Delete" Clicked="DeleteItem_Clicked" />
+                                <MenuItem IsDestructive="True" Text="Delete" Clicked="DeleteItem_Clicked" CommandParameter="{Binding .}" />
                             </TextCell.ContextActions>
                         </TextCell>
                     </DataTemplate>
