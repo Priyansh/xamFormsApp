@@ -26,22 +26,23 @@
             </ListView.ItemTemplate>
         </ListView>
     </ContentPage>
-    <ContentPage Title="AirBnb" Icon="user.png">
-        <StackLayout>
-            <SearchBar Placeholder="Search..." TextChanged="SearchBar_TextChanged" />
-            <ListView x:Name="lstAirbnbElement" 
-                      IsGroupingEnabled="True" 
-                      GroupDisplayBinding="{Binding Title}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding Location}" Detail="{Binding CheckIn}">
-                            <TextCell.ContextActions>
-                                <MenuItem IsDestructive="True" Text="Delete" Clicked="DeleteItem_Clicked" />
-                            </TextCell.ContextActions>
-                        </TextCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
+    <ContentPage Title="Profile" Icon="user.png">
+        <ListView x:Name="lstProfileElement" SeparatorColor="Black" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="5">
+                            <ic:CircleImage WidthRequest="60"
+                            HeightRequest="60"
+                            Source="{Binding ImageUrl}"
+                            Aspect="AspectFill" />
+                            <StackLayout HorizontalOptions="StartAndExpand">
+                                <Label Text="{Binding Description}" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage>
 </TabbedPage>
