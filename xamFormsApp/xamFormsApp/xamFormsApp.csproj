@@ -89,6 +89,8 @@
     </Compile>
     <Compile Include="MarkupExtension\EmbeddedImage.cs" />
     <Compile Include="Models\Activity.cs" />
+    <Compile Include="Models\AirbnbSearch.cs" />
+    <Compile Include="Models\AirbnbSearchGroup.cs" />
     <Compile Include="Models\ContactGroup.cs" />
     <Compile Include="Models\Contacts.cs" />
     <Compile Include="Models\User.cs" />
@@ -100,6 +102,7 @@
       <DependentUpon>QuotesPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Service\ActivityService.cs" />
+    <Compile Include="Service\AirBnbSearchService.cs" />
     <Compile Include="Service\UserService.cs" />
     <Compile Include="StackPage.xaml.cs">
       <DependentUpon>StackPage.xaml</DependentUpon>
