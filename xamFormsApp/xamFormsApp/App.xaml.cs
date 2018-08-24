@@ -12,7 +12,7 @@ namespace xamFormsApp
         public App()
         {
             InitializeComponent();
-            MainPage = new RestAPIPage();
+            MainPage = new RestapiMosh();
             //MainPage = new NavigationPage(new NavInstaMasterDetailExcercise());
             //{
             //    BarBackgroundColor = Color.LightGreen,
