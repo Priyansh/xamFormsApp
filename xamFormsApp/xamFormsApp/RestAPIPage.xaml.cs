@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Plugin.Geolocator;
 using Xamarin.Forms;
 using xamFormsApp.Core;
+using Xamarin.Forms.Maps;
 
 namespace xamFormsApp
 {
@@ -27,9 +28,9 @@ namespace xamFormsApp
 
         void Locator_PositionChanged(object sender, Plugin.Geolocator.Abstractions.PositionEventArgs e)
         {
-            locationMaps.MapType = Xamarin.Forms.Maps.MapType.Hybrid;
+            locationMaps.MapType = MapType.Hybrid;
             locationMaps.MoveToRegion(
-                new Xamarin.Forms.Maps.MapSpan(new Xamarin.Forms.Maps.Position(e.Position.Latitude, e.Position.Longitude), 2, 2)
+                new MapSpan(new Position(e.Position.Latitude, e.Position.Longitude), 2, 2)
             );
         }
     }
